@@ -1,7 +1,7 @@
 FROM nginx:1.13.9-alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-RUN mkdir -p /usr/share/nginx/site1 && \
-    mkdir -p /usr/share/nginx/site2 && \
+RUN mkdir -p /usr/share/nginx/site1 
+RUN mkdir -p /usr/share/nginx/site2 
 COPY index.html /usr/share/nginx/site1
 COPY index.html /usr/share/nginx/site2
 EXPOSE 8080 
